@@ -1,4 +1,105 @@
-<div class="Section0" style="layout-grid: 18,0000pt;">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+        <style type="text/css">
+            <!--
+                #webme_sky_ad {
+                    position: absolute;
+                    right: 5px;
+                    top: 0px;
+                    z-index: 1000000000000000000; 
+                }
+            //-->
+        </style>    
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+		        <script type="text/javascript">
+        var dateTimeOffset = new Date().getTimezoneOffset();
+        
+        function getElementsByClassNameLocalTimeWrapper() {
+            return document.getElementsByClassName("localtime");
+        }
+        
+        (function () {
+            var onload = function () {
+                var elementArray = new Array();
+                
+                if (document.getElementsByClassName) {
+                    elementArray = getElementsByClassNameLocalTimeWrapper();
+                } else {
+                    var re = new RegExp('(^| )localtime( |$)');
+                    var els = document.getElementsByTagName("*");
+                    for (var i=0,j=els.length; i<j; i++) {
+                        if (re.test(els[i].className))
+                            elementArray.push(els[i]);
+                    }
+                }
+                
+                for (var i = 0; i < elementArray.length; i++) {    
+                    var timeLocal = new Date(parseInt(elementArray[i].getAttribute("data-timestamp")));
+                    var hour = timeLocal.getHours();
+                    var ap = "am";
+                    if (hour > 11) {
+                        ap = "pm";
+                    }
+                    else if (hour > 12) {
+                        hour = hour - 12;
+                    }
+                    
+                    var string = elementArray[i].getAttribute("data-template");
+                    string = string.replace("[Y]", timeLocal.getFullYear());
+                    string = string.replace("[m]", ('0' + (timeLocal.getMonth() + 1)).slice(-2));
+                    string = string.replace("[d]", ('0' + timeLocal.getDate()).slice(-2));
+                    string = string.replace("[H]", ('0' + timeLocal.getHours()).slice(-2));
+                    string = string.replace("[g]", ('0' + hour).slice(-2));
+                    string = string.replace("[i]", ('0' + timeLocal.getMinutes()).slice(-2));
+                    string = string.replace("[s]", ('0' + timeLocal.getSeconds()).slice(-2));
+                    string = string.replace("[a]", ap);
+                    elementArray[i].childNodes[0].nodeValue = string;
+                }
+            };
+            
+            if (window.addEventListener)
+                window.addEventListener("DOMContentLoaded", onload);
+            else if (window.attachEvent)
+                window.attachEvent("onload", onload);
+        })();
+        </script><link rel="icon" href="https://wtheme.webme.com/img/main/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" type="image/x-icon" href="https://wtheme.webme.com/img/main/favicon.ico" />
+<link type="image/x-icon" href="https://wtheme.webme.com/img/main/favicon.ico" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<!-- Remove the noindex-tag by booking any premium package on https://www.own-free-website.com/Premium/PackageSelection/. Only premium websites can be indexed by Google and other search engines -->
+<meta name="robots" content="noindex" />
+<meta property="og:title" content="Startpage" />
+<meta property="og:image" content="https://theme.webme.com/designs/css-only/screen.jpg" />
+		<title>Startpage - Home</title>
+				<style type="text/css">
+			<!--
+						body
+{
+   background-color: #363636;
+   background-image: url('https://media.idownloadblog.com/wp-content/uploads/2021/08/Safari-Wallpaper-AR72014-iDownloadBlog-iPad-Desktop-Orange-768x768.jpeg');
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   color: #ffffff;
+   font-family: Helvetica;
+   font-weight: normal;
+   font-size: 13px;
+}
+
+
+h1#title{display: none;}
+h2#title span {display: none;}
+div.header{display: none;}
+li.nav_element{list-style-type: none;}
+li.nav_element{display: none;}			//-->
+		</style>
+			</head>
+	<body id="hpb_cssonly">
+		<div class="Section0" style="layout-grid: 18,0000pt;">
 <div align="center">
 <table class="MsoTableGrid" style="border-collapse: collapse; --darkreader-inline-border-right: currentcolor; --darkreader-inline-border-left: currentcolor; height: 642px;" cellspacing="0" border="0">
 <tbody>
@@ -92,7 +193,7 @@
 </tr>
 <tr style="height: 53px;">
 <td colspan="9" data-darkreader-inline-border-top="" style="border-top: medium none; --darkreader-inline-border-top: currentcolor; height: 53px; width: 817.5px;" valign="center">
-<p class="MsoNormal" style="text-align: left;"><span style="font-family: SF Pro Display, Segoe UI Semibold, sans-serif; font-size: 30px;"><strong>&nbsp;&nbsp;Sık Ziyaret Edilenler</strong></span></p>
+<p class="MsoNormal" style="text-align: left;"><span style="font-family: SF Pro Display, Segoe UI Semibold, sans-serif; font-size: 30px;"><strong>&nbsp;&nbsp;S&#305;k Ziyaret Edilenler</strong></span></p>
 </td>
 </tr>
 <tr style="height: 121px;">
@@ -128,4 +229,155 @@
 </table>
 </div>
 <p class="MsoNormal"><span style="mso-spacerun: 'yes'; font-family: Calibri; mso-fareast-font-family: SimSun; mso-bidi-font-family: 'Times New Roman';">&nbsp;</span></p>
+</div>		<div id="container">
+			<div id="header_container">
+				<div id="pre_header"></div>
+				<div class="header"><h1 id="header"><span>Startpage</span></h1></div>
+				<div id="post_header"></div>
+			</div>
+			<div id="nav_container">
+			<h2 id="nav_heading"><span></span></h2>
+				<ul id="nav">
+<li class="nav_element checked_menu" id="nav_Home">
+<a href="/Home.htm" class="menu">Home</a></li>
+<li class="nav_element" id="nav_ExampleSubpage">
+<a href="/Example-Subpage.htm" class="menu">Example Subpage</a></li>
+<li class="nav_element" id="nav_Contact">
+<a href="/Contact.htm" class="menu">Contact</a></li>
+				</ul>
+			</div>
+			<div id="content_container">
+				<div id="pre_content"></div>
+				<div id="content">
+					<h2 id="title"><span>Home</span></h2>
+					<br />
+<div id="simple-translate" class="simple-translate-system-theme">
+<div>
+<div style="background-image: url(&quot;moz-extension://2df328ec-b104-4402-98aa-cd52cbb6bb16/icons/512.png&quot;); height: 22px; width: 22px; top: -33px; left: -30px;" class="simple-translate-button isShow">&nbsp;</div>
+<div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px;">
+<div class="simple-translate-result-wrapper" style="overflow: hidden;">
+<div class="simple-translate-move" draggable="true">&nbsp;</div>
+<div class="simple-translate-result-contents">
+<p class="simple-translate-result" dir="auto">&nbsp;</p>
+<p class="simple-translate-candidate" dir="auto">&nbsp;</p>
 </div>
+</div>
+</div>
+</div>
+</div>				</div>
+				<div id="counter"><span>Today, there have been 1 visitors (9 hits) on this page!</span></div>
+				<div id="post_content"></div>
+								<div id="sidebar_container">
+					<h2 id="sidebar_heading"><span></span></h2>
+					<div id="sidebar_content"></div>
+				</div>
+			</div>
+		</div>
+						<a id="selfpromotionOverlay" href="https://www.own-free-website.com/?c=4000&amp;utm_source=selfpromotion&amp;utm_campaign=overlay&amp;utm_medium=footer" target="_blank" rel="nofollow">
+    This website was created for free with <b>Own-Free-Website.com</b>. Would you also like to have your own website?
+
+    <div class="btn btn-1">Sign up for free</div>
+
+</a>
+<style>
+    body {
+        padding-top: 124px;
+    }
+    #forFixedElement {
+        top: 124px;
+    }
+    @media (min-width: 365px) {
+        body {
+            padding-top: 103px;
+        }
+        #forFixedElement {
+            top: 103px;
+        }
+    }
+    @media (min-width: 513px) {
+        body {
+            padding-top: 82px;
+        }
+        #forFixedElement {
+            top: 82px;
+        }
+    }
+    @media (min-width: 936px) {
+        body {
+            padding-top: 61px;
+        }
+        #forFixedElement {
+            top: 61px;
+        }
+    }
+
+    /* General button style */
+    #selfpromotionOverlay .btn {
+        border: none;
+        font-size: inherit;
+        color: inherit;
+        background: none;
+        cursor: pointer;
+        padding: 6px 15px;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin: 0px;
+    }
+
+    /* Button 1 */
+    #selfpromotionOverlay .btn-1, #selfpromotionOverlay .btn-1:visited {
+        background: rgb(0, 85, 204);
+        color: #fff;
+    }
+
+    #selfpromotionOverlay .btn-1:hover {
+        background: #2980b9;
+    }
+
+    #selfpromotionOverlay .btn-1:active {
+        background: #2980b9;
+        top: 2px;
+    }
+
+    #selfpromotionOverlay {
+        font: 400 12px/1.8 "Open Sans", Verdana, sans-serif;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 1s ease;
+        position: fixed;
+        overflow: hidden;
+        box-sizing: border-box;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 1.5em;
+        flex-wrap: nowrap;
+        z-index: 5000;
+        padding: 14px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        color: rgb(35,35,35);
+        background-color: rgb(246,246,246);
+        border-bottom: 1px solid #5a5a5a;
+    }
+
+    #selfpromotionOverlay:hover {
+        background: white;
+        text-decoration: none;
+    }
+</style>		<div id="extraDiv1"><span></span></div>
+		<div id="extraDiv2"><span></span></div>
+		<div id="extraDiv3"><span></span></div>
+		<div id="extraDiv4"><span></span></div>
+		<div id="extraDiv5"><span></span></div>
+		<div id="extraDiv6"><span></span></div>
+	</body>
+</html>
