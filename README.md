@@ -9,3 +9,6 @@
   <a href="https://github.com/justinl99/safari-startpage/"><img src="/screenshot.png" alt="Scrsht"></a>
 </h1>
 
+<h1 align="center">I found this <a href="https://github.com/denizjcan/Firefox-Safari-15-Theme">here</a>. I just modified some icon and some code to make it perfect!
+</h1>
+
