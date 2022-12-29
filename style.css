@@ -1,0 +1,19 @@
+body
+{
+   background-color: #363636;
+   background-image: url('https://media.idownloadblog.com/wp-content/uploads/2021/08/Safari-Wallpaper-AR72014-iDownloadBlog-iPad-Desktop-Orange-768x768.jpeg');
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   color: #ffffff;
+   font-family: Helvetica;
+   font-weight: normal;
+   font-size: 13px;
+}
+
+
+h1#title{display: none;}
+h2#title span {display: none;}
+div.header{display: none;}
+li.nav_element{list-style-type: none;}
+li.nav_element{display: none;}
